@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gato", "Gato\Gato.vcproj", "{69855A84-F713-4F39-A5A5-A2F40875336B}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gato", "Gato\Gato.vcxproj", "{69855A84-F713-4F39-A5A5-A2F40875336B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
