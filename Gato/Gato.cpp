@@ -3,17 +3,11 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include "constants.h"
+#include "globals.h"
+#include "dashboard.h"
 
 using namespace std;
-
-const int EMPTY = 0;
-const int OS = 1;
-const int XS = 2;
-const int wins[8][3] = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0,3,6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}}; 
-
-int dashboard[9] = {EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY, EMPTY};
-bool xplay = true;
-
 int requestPlay()
 {
 	int play;
@@ -69,7 +63,8 @@ bool tie()
 }
 
 int _tmain(int argc, _TCHAR* argv[])
-{	
+{
+	print();
 	while(!(win(XS) || win(OS) || tie())) {
 		while (!assignPlay(requestPlay()));
 		xplay = !xplay;
@@ -78,7 +73,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		if (win(OS))
 			cout << "Felicidades o a gando. Weeee!!" << endl;
 		if (!win(XS) && !win(OS) && tie())
-			cout << "Juego empatado";
+			cout << "Juego empatado" << endl;
+		print();
 	}
 	return 0;
 }
