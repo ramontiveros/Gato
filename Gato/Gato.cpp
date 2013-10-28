@@ -77,7 +77,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			cout << "Felicidades x a gando. Weeee!!" << endl;
 		if (win(OS))
 			cout << "Felicidades o a gando. Weeee!!" << endl;
-		if (tie())
+		if (!win(XS) && !win(OS) && tie())
 			cout << "Juego empatado";
 	}
 	return 0;
